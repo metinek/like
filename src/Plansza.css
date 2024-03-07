@@ -1,0 +1,21 @@
+button {
+    margin-top: 5px;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.Post {
+    margin: 10px;
+}
+
+
+.Blok {
+    height: 20px;
+    width: 300px;
+    margin-left: 20px;
+}
