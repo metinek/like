@@ -49,10 +49,15 @@ function Plansza(props) {
 
     function funLike() {
       setLike(like+1);
+      let ile = like/(like+dislike);
+      console.log(ile);
+      document.getElementById('Blok2').style.width=({ile}*100)+"%";
     }
 
     function funDisLike() {
       setDisLike(dislike+1);
+      let ile = like/(like+dislike);
+      console.log(ile);
     }
 
 
