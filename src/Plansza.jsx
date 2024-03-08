@@ -11,6 +11,7 @@ import { useState } from 'react';
 function Plansza(props) {
   let [like, setLike] = useState(0);
   let [dislike, setDisLike] = useState(0);
+  let id = 'pasek'+props.id;
 
 
 
@@ -35,9 +36,7 @@ function Plansza(props) {
 
 
             <div className='Blok'>
-              <div id='Blok2'>
-
-              </div>
+              <div id={id}/>
             </div>
 
 
@@ -50,14 +49,19 @@ function Plansza(props) {
     function funLike() {
       setLike(like+1);
       let ile = like/(like+dislike);
+      ile*=300;
       console.log(ile);
-      document.getElementById('Blok2').style.width=({ile}*100)+"%";
+      document.getElementById(id).style.width={ile}+'px';
+      document.getElementById(id).style.backgroundColor='aquamarine';
     }
 
     function funDisLike() {
       setDisLike(dislike+1);
       let ile = like/(like+dislike);
+      ile*=300;
       console.log(ile);
+      document.getElementById(id).style.width={ile}+'px';
+      document.getElementById(id).style.backgroundColor='lightcoral';
     }
 
 
